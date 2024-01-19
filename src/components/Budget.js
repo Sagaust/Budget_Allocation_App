@@ -8,10 +8,17 @@ const Budget = () => {
     const [editMode, setEditMode] = useState(budget === 0); // Edit mode is on if budget is not set
     const [error, setError] = useState('');
 
+    // Calculate total expenses
+    const totalExpenses = expenses.reduce((total, expense) => total + expense.cost, 0);
+
     const handleSave = () => {
         const budgetValue = parseFloat(newBudget);
         if (isNaN(budgetValue) || budgetValue < 0) {
             setError('Please enter a valid budget');
+            return;
+        }
+        if (budgetValue < totalExpenses) {
+            setError('Budget cannot be lower than the total expenses');
             return;
         }
         dispatch({
@@ -24,12 +31,9 @@ const Budget = () => {
 
     return (
         <div className="budget-card">
-            {!editMode && (
-                <button onClick={() => setEditMode(true)} className="btn btn-edit">Edit Budget</button>
-            )}
             {editMode ? (
                 <div>
-                    <h4>Create Budget</h4>
+                    <h4>{budget === 0 ? "Create Budget" : "Edit Budget"}</h4>
                     <input
                         type="number"
                         value={newBudget}
@@ -42,6 +46,7 @@ const Budget = () => {
             ) : (
                 <div>
                     <span>Budget: {currency}{budget}</span>
+                    <button onClick={() => setEditMode(true)} className="btn btn-edit ml-2">Edit Budget</button>
                 </div>
             )}
         </div>
