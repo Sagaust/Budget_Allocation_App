@@ -1,0 +1,75 @@
+/* Budget.css - Specific styles for the Budget component */
+
+.budget-card {
+    background-color: #e5be40;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative; /* Needed for positioning the error message */
+}
+
+.budget-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevated effect on hover */
+}
+
+.budget-card h4 {
+    color: #080303; /* Aligning with global heading color */
+    margin-bottom: 15px;
+    font-size: large;
+    font-weight: 600;
+    
+}
+
+.budget-card .form-control {
+    background-color: #04325f;
+    border: 6px solid #bea806; /* Border color */
+    color: #edeef2;
+  font-size: large;
+  font-weight: 600;
+    transition: border-color 0.3s ease;
+}
+
+.budget-card .form-control:focus {
+    border-color: #80bdff; /* Highlight focus */
+    outline: none; /* Remove default outline */
+}
+
+.budget-card .btn-primary {
+    background-color: #04325f;
+    border: 6px solid #bea806;
+    transition: background-color 0.2s ease;
+}
+
+.budget-card .btn-primary:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.budget-card .btn-edit {
+    background-color: #ffc107; /* Yellow color for edit button */
+    border-color: #ffc107;
+    transition: background-color 0.2s ease;
+}
+
+.budget-card .btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.budget-card .alert-danger {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border-color: #f5c6cb; /* Light red border */
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Add any additional specific styles as needed */

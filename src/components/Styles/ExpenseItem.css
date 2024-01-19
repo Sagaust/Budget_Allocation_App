@@ -1,0 +1,46 @@
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item span {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* Adjust font size for better readability */
+}
+
+.expense-item .btn-image {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Fixed width for buttons */
+    height: 30px; /* Fixed height for buttons */
+    border-radius: 50%; /* Circular buttons */
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+.expense-item .btn-increase {
+    color: #28a745; /* Color for increase button */
+}
+
+.expense-item .btn-decrease {
+    color: #dc3545; /* Color for decrease button */
+}
+
+.expense-item .btn-delete {
+    color: #ffc107; /* Color for delete button */
+}
+
+.expense-item .btn-image:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+}

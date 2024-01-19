@@ -1,0 +1,37 @@
+.expense-list {
+    margin-top: 20px;
+}
+
+.expense-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expense-list li {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px 15px; /* Slightly larger padding for better spacing */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: box-shadow 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.expense-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover for interactive feel */
+}
+
+/* Enhance the visual separation of the expense name and the control buttons */
+.expense-list .expense-name {
+    font-weight: 500; /* Slightly bolder font for the name */
+    color: #333;
+    flex-grow: 1; /* Ensures it takes the needed space */
+}
+
+.expense-list .expense-controls {
+    display: flex;
+    align-items: center;
+}

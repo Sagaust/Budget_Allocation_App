@@ -1,0 +1,20 @@
+/* Remaining.css */
+
+.budget-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Add any additional styles as needed */

@@ -1,0 +1,310 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Basic styling for the whole app */
+body {
+  background-color: #04325f; /* Soft background for overall app */
+  color: #343a40; /* Darker text for better readability */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Container for alignment and spacing */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #faf9f3; /* Blue color for headings */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Buttons */
+button {
+  background-color: #01080a; /* Calming blue color for buttons */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #138496; /* Darker shade on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Form controls */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #c6c014;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #80bdff; /* Highlight focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Alert and Info messages */
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* List group styling */
+.list-group-item {
+  background-color: #04325f;
+  border: 6px solid #bea806;
+  padding: 2.5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  color: #edeef2;
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item:hover {
+  background-color: rgb(7, 6, 1); /* Slight change on hover */
+}
+
+/* Button styling within list item */
+.list-group-item .btn {
+  background-color: transparent;
+  border: none;
+  color: #edeef2; /* Contrast color for icons */
+  margin-left: 5px; /* Spacing between buttons */
+  transition: color 0.2s ease;
+}
+
+.list-group-item .btn:hover {
+  color: #bea806; /* Change icon color on hover */
+}
+
+/* Expense list header styling */
+.expense-list-header {
+  color: #bea806; /* Header color */
+  margin-bottom: 15px; /* Spacing below header */
+}
+
+/* Additional styling for ExpenseList component */
+.expense-list-no-item {
+  color: #edeef2; /* Color for 'no expenses' text */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Spacing from top */
+}
+
+/* Add more specific styles as needed... */
+
+/* Button styling within list item */
+.list-group-item .btn {
+  background-color: transparent;
+  border: none;
+  color: #edeef2; /* Contrast color for icons */
+  margin-left: 5px; /* Spacing between buttons */
+  padding: 5px; /* Padding for clickable area */
+  transition: color 0.2s, transform 0.2s; /* Transition for hover effects */
+}
+
+/* Hover effect for buttons */
+.list-group-item .btn:hover {
+  color: #bea806; /* Change icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+/* Specific styling for different buttons */
+.list-group-item .btn-increase:hover {
+  color: #28a745; /* Green color on hover for increase */
+}
+
+.list-group-item .btn-decrease:hover {
+  color: #dc3545; /* Red color on hover for decrease */
+}
+
+.list-group-item .btn-delete:hover {
+  color: #ffc107; /* Yellow color on hover for delete */
+}
+
+
+/* Card Style */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-content {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Enhanced row styling */
+.row.mt-3 {
+  margin-top: 1rem;
+  padding: 15px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(121, 84, 2, 0.1);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .row.mt-3 {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Custom column padding and centering */
+.budget-card-col {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.budget-card-col .card {
+  width: 100%;
+}
+
+/* Add any additional specific styles as needed */
+/* AllocationForm styles */
+
+/* Form Row Layout */
+.allocation-form-row {
+  margin-bottom: 15px; /* Spacing between form elements */
+}
+
+/* Form Group */
+.allocation-form-row .form-group {
+  margin-bottom: 15px; /* Spacing within each form group */
+}
+
+/* Department Selector */
+#department {
+  background-color: #04325f; /* Light background for input */
+  border: 4px solid #bea806; /* Border color */
+  color:#edeef2;
+  font-size: large;
+  font-weight: 600;
+
+}
+
+/* Amount Input */
+#amount {
+  background-color: #04325f; /* Light background for input */
+  border: 4px solid #bea806; /* Border color */
+  color:#edeef2;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Save Button */
+.allocation-form-row .btn-primary {
+  background-color: #28a745; /* Green color for action */
+  border-color: #28a745; /* Border color */
+}
+
+.allocation-form-row .btn-primary:hover {
+  background-color: #218838; /* Darker shade on hover */
+  border-color: #1e7e34; /* Border color on hover */
+}
+
+/* Error Message */
+.alert-danger {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border-color: #f5c6cb; /* Light red border */
+}
+
+/* Enhance the error message display */
+.alert-danger {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .allocation-form-row .form-group,
+  .allocation-form-row .btn-primary {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Save button styling in AllocationForm */
+.allocation-form-save-btn {
+  background-color: #04325f;
+  border: 6px solid #bea806;
+  color: white; /* White text for contrast */
+  padding: 5px 10px; /* Adequate padding for button size */
+  border-radius: 5px; /* Rounded corners for modern look */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+  cursor: pointer; /* Cursor changes to pointer to indicate action */
+  align-items: center;
+  margin-top: 20%;
+}
+
+.allocation-form-save-btn:hover {
+  background-color: #218838; /* Slightly darker green on hover for feedback */
+}
+
+/* Add media query for responsiveness if needed */
+@media (max-width: 768px) {
+  .allocation-form-save-btn {
+      width: 100%; /* Full width button on smaller screens */
+      margin-top: 10px; /* Spacing above the button on smaller screens */
+  }
+}
