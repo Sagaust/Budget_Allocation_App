@@ -12,43 +12,37 @@ Welcome to the Budget Allocation App, an interactive web application designed to
 - **Interactive UI with React JS**: Utilizes the power of React for a seamless user experience.
 - **Responsive Design**: Compatible with various devices and screen sizes.
 
-# Budget Allocation App
-
-## Overview
-
-[... Add a brief introduction about your app ...]
-
 ## Key Features and Screenshots
 
 ### 1. User Can Select a Department from the Dropdown and Allocate Amount from the Initial Budget
-![Department Allocation] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/user%20would%20select%20a%20department%20from%20the%20dropdown%20and%20allocate%20amount%20from%20the%20initial%20budget.png)
+![Department Allocation](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/user%20would%20select%20a%20department%20from%20the%20dropdown%20and%20allocate%20amount%20from%20the%20initial%20budget.png)
 
 ### 2. User Can Change the Currency
-![Change Currency] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/User%20can%20change%20the%20currency.png)
+![Change Currency](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/User%20can%20change%20the%20currency.png)
 
 ### 3. The Change of Currency Reflects Across Various Components on the App
-![Currency Reflection] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/the%20change%20of%20currency%20reflects%20across%20varous%20components%20on%20the%20app.png)
+![Currency Reflection](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/the%20change%20of%20currency%20reflects%20across%20varous%20components%20on%20the%20app.png)
 
 ### 4. Dashboard with Allocation in Pounds
-![Dashboard in Pounds] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Dashboard%20with%20allocation%20in%20Pounds.png)
+![Dashboard in Pounds](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Dashboard%20with%20allocation%20in%20Pounds.png)
 
 ### 5. The Dashboard After Departmental Allocation
-![Post Allocation Dashboard] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/The%20Dashboard%20after%20deparmental%20allocation.png)
+![Post Allocation Dashboard](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/The%20Dashboard%20after%20deparmental%20allocation.png)
 
 ### 6. User Can Increase Budget Allocation Using the Plus Button
-![Increase Allocation] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/the%20plus%20button%20increases%20the%20amount.png)
+![Increase Allocation](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/the%20plus%20button%20increases%20the%20amount.png)
 
 ### 7. User Can Reduce or Add to the Amount Already Budgeted for a Department
-![Adjusting Budget] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/the%20plus%20button%20increases%20the%20amount.png)
+![Adjusting Budget](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/User%20can%20reduce%20or%20add%20to%20the%20amount%20already%20budgeted%20for%20a%20department.png)
 
 ### 8. Already Allocated Budgets Can Be Deleted
-![Delete Allocation] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Already%20allocated%20Budgets%20can%20be%20deleted.png)
+![Delete Allocation](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Already%20allocated%20Budgets%20can%20be%20deleted.png)
 
 ### 9. Error Handling: When the Budget Value Allocated Is Lower Than the Spending
-![Error Handling - Budget Lower Than Spending] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Error%20handling_when%20the%20Budget%20value%20allocated%20is%20lower%20than%20the%20spending.png)
+![Error Handling - Budget Lower Than Spending](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Error%20handling_when%20the%20Budget%20value%20allocated%20is%20lower%20than%20the%20spending.png)
 
 ### 10. Error Handling: When the Allocation to a Department Exceeds the Remaining Budget
-![Error Handling - Exceeding Remaining Budget] (https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Error%20handling_when%20the%20allocation%20to%20department%20exceeds%20the%20remaining%20budget.png)
+![Error Handling - Exceeding Remaining Budget](https://github.com/Sagaust/Budget_Allocation_App/blob/main/screenshots/Error%20handling_when%20the%20allocation%20to%20department%20exceeds%20the%20remaining%20budget.png)
 
 
 ## Technologies Used
